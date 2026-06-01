@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Домова кухня — домашні м'ясні джерки з натуральної курятини. 3D-вітрина, опт і роздріб.">
+  <link rel="icon" href="data:,">
+  <title>Домова Кухня | Домашні джерки</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M10 6c-1.4 0-2.6 1-2.6 2.6 0 .9.5 1.6 1.1 2.1-2 .8-3.5 2.8-3.5 5.3 0 3.4 2.9 6 6.8 6h4.6c4.7 0 7.6-2.6 8.8-5.6.4-1 .9-1.3 1.7-1.5 1.1-.3 1.8-1.1 1.8-2.1 0-1.2-1-2-2.2-2-.7 0-1.3.3-1.9.3-.6 0-1-.4-1.5-1-1.3-1.7-3.3-2.8-5.7-2.8-.6 0-1.1 0-1.6.1-.4-.8-1.3-1.5-2.5-1.5l-1.4-.8c-.1-.4-.5-.6-1-.6z" fill="currentColor"></path><circle cx="10.4" cy="9" r="0.9" fill="#14110f"></circle></svg>
+        </span>
+        <span>Домова Кухня</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Меню" aria-expanded="false">☰</button>
+
+      <nav class="nav" aria-label="Навігація">
+        <a href="#products">Товари</a>
+        <a href="#pricing">Ціни</a>
+        <a href="#benefits">Переваги</a>
+        <a href="#business">Бізнесу</a>
+        <a href="#about">Про нас</a>
+        <a class="header-cta js-order-link" href="#contacts">Замовити у Viber</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="scene"></canvas>
+      <div class="hero-vignette"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span>Домашнє виробництво · 100% філе</span>
+          <h1 class="display">
+            <span class="line"><span class="reveal">Джерки,</span></span>
+            <span class="line"><span class="reveal">що <span class="accent">тануть</span></span></span>
+            <span class="line"><span class="reveal">у роті</span></span>
+          </h1>
+          <p class="lead">Сушена курятина ручного приготування. Насичений смак, щільна текстура, чесний склад — для перекусу, дороги та тренувань.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#products">Переглянути смаки</a>
+            <a class="btn secondary js-order-link" href="#contacts">Замовити у Viber</a>
+          </div>
+          <div class="hero-chips">
+            <span>Фасування 45 г – 1 кг+</span>
+            <span>Опт і роздріб</span>
+            <span>8 смаків</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint"><span class="mouse"></span>Гортай</div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Гострий Чилі</span><span>Паприка</span><span>Імбир та кунжут</span><span>Цибуля &amp; базилік</span><span>Італійські трави</span><span>Французька гірчиця</span><span>Томати та зелень</span><span>Класичні</span>
+        <span>Гострий Чилі</span><span>Паприка</span><span>Імбир та кунжут</span><span>Цибуля &amp; базилік</span><span>Італійські трави</span><span>Французька гірчиця</span><span>Томати та зелень</span><span>Класичні</span>
+      </div>
+    </div>
+
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal-up"><div class="num" data-count="320" data-suffix=" ккал">0</div><div class="label">на 100 г сухого м'яса</div></div>
+        <div class="stat reveal-up"><div class="num" data-count="100" data-suffix="%">0</div><div class="label">куряче філе вищого ґатунку</div></div>
+        <div class="stat reveal-up"><div class="num" data-count="8" data-suffix=" смаків">0</div><div class="label">від класики до гострого чилі</div></div>
+        <div class="stat reveal-up"><div class="num" data-count="180" data-suffix=" діб">0</div><div class="label">зберігання у вакуумі</div></div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title reveal-up">
+            <span class="section-eyebrow">Каталог</span>
+            <h2>Обери свій смак</h2>
+            <p>Смаки, фасування та упаковка — зібрані в одному місці для роздрібних і оптових замовлень.</p>
+          </div>
+          <div class="filters reveal-up" aria-label="Фільтр">
+            <button class="filter-btn active" type="button" data-filter="all">Усі</button>
+            <button class="filter-btn" type="button" data-filter="jerky">Джерки</button>
+            <button class="filter-btn" type="button" data-filter="packaging">Пачки</button>
+            <button class="filter-btn" type="button" data-filter="other">Інше</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title reveal-up">
+            <span class="section-eyebrow">Прайс</span>
+            <h2>Прозорі ціни</h2>
+            <p>Для великих замовлень ціна залежить від ваги, кількості та формату пакування.</p>
+          </div>
+        </div>
+        <div class="price-tabs" id="priceTabs" role="tablist"></div>
+        <div class="price-panel-wrap" id="pricePanel"></div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title reveal-up">
+            <span class="section-eyebrow">Переваги</span>
+            <h2>Чому обирають нас</h2>
+            <p>Домашній формат без промислової байдужості: кожна партія готується вручну.</p>
+          </div>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit reveal-up"><div class="benefit-num">01</div><h3>Натуральне м'ясо</h3><p>Добірне куряче філе та виразний смак у кожному шматочку.</p></article>
+          <article class="benefit reveal-up"><div class="benefit-num">02</div><h3>Ручна робота</h3><p>Невеликі партії, ручна нарізка, маринування та контроль сушіння.</p></article>
+          <article class="benefit reveal-up"><div class="benefit-num">03</div><h3>Без зайвої хімії</h3><p>Фокус на спеціях, м'ясі й технології, а не на добавках.</p></article>
+          <article class="benefit reveal-up"><div class="benefit-num">04</div><h3>Багато білка</h3><p>Поживний перекус після тренування, в дорозі чи на роботі.</p></article>
+          <article class="benefit reveal-up"><div class="benefit-num">05</div><h3>Зручно з собою</h3><p>Різні фасування для покупок, подарунків і опту.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="business" id="business">
+      <div class="container business-layout">
+        <div class="business-copy reveal-up">
+          <span class="section-eyebrow">Опт і магазини</span>
+          <h2>Джерки для вашої полиці або меню</h2>
+          <p>Запрошуємо до співпраці ресторани, паби, магазини, кав'ярні, оптових та роздрібних клієнтів. Допоможемо підібрати смаки, фасування й формат пакування під ваш продаж.</p>
+          <p>Для оптових покупців діє система знижок. Умови узгоджуємо індивідуально залежно від обсягу та регулярності.</p>
+          <div class="business-actions">
+            <a class="btn js-order-link" href="#contacts">Обговорити у Viber</a>
+            <a class="btn secondary" href="#pricing">Переглянути ціни</a>
+          </div>
+        </div>
+        <div class="business-grid">
+          <article class="business-card reveal-up"><span class="ic">01</span><h3>Оптові умови</h3><p>Гнучкі ціни для більших партій і постійних клієнтів.</p></article>
+          <article class="business-card reveal-up"><span class="ic">02</span><h3>Фасування під продаж</h3><p>Підбираємо вагу, пачку й формат для полиці чи бару.</p></article>
+          <article class="business-card reveal-up"><span class="ic">03</span><h3>Стабільний асортимент</h3><p>Популярні смаки для регулярної наявності.</p></article>
+          <article class="business-card reveal-up"><span class="ic">04</span><h3>Проста комунікація</h3><p>Швидко узгоджуємо обсяг, терміни та відправлення.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-wrap">
+        <span class="section-eyebrow reveal-up">Про бренд</span>
+        <p class="about-lead reveal-up">Готуємо м'ясні снеки так, як <span class="accent">для своїх</span>: добірне м'ясо, збалансовані спеції, ручна робота і смак, до якого хочеться повернутися.</p>
+        <p class="reveal-up">Кожна партія проходить уважне маринування, сушіння та фасування. Ми працюємо з роздрібними й оптовими замовленнями, підбираємо смаки під потребу й тримаємо комунікацію простою: чесна вага, зрозумілі умови, стабільна якість.</p>
+        <div class="about-points">
+          <span class="reveal-up">Ручне приготування</span>
+          <span class="reveal-up">Партії під замовлення</span>
+          <span class="reveal-up">Оптові ціни</span>
+          <span class="reveal-up">Фасування під потребу</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2 class="reveal-up">Хочеш спробувати справжні домашні джерки?</h2>
+        <a class="btn js-order-link reveal-up" href="#contacts">Написати у Viber</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <strong>Домова Кухня</strong>
+          <p>Домашні джерки, сушені ковбаски та м'ясні снеки для роздрібних і оптових замовлень.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Зв'язок</h4>
+          <a class="js-order-link" href="viber://chat?number=%2B380632858905">Viber: 063 285 8905</a>
+          <a href="tel:+380991217897">тел. 099 121 7897</a>
+          <a href="tel:+380506720608">тел. 050 672 0608</a>
+        </div>
+        <div class="footer-col">
+          <h4>Пошта</h4>
+          <a href="mailto:kamyjerky@gmail.com">kamyjerky@gmail.com</a>
+          <a href="mailto:kraftove.myso@gmail.com">kraftove.myso@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Домова Кухня · Домашні джерки з натуральної курятини</div>
+    </div>
+  </footer>
+
+  
+
+  <script src="three.min.js"></script>
+  <script src="scene.js"></script>
+  <script src="app.js"></script>
+
+
+</body></html>
